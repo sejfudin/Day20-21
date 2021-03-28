@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Virtual Keyboard</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="container" name="form">
+        <h2>Virtual Keyboard</h2>
+        <textarea id="textarea" name="textarea"></textarea>
+        <div class="wrapper">
+            <div class="keys">
+
+                <button type="submit" name="1" value="1" onclick="display(value)">1</button>
+                <button type="submit" name="2" value="2" onclick="display(value)">2</button>
+                <button type="submit" name="3" value="3" onclick="display(value)">3</button>
+                <button type="submit" name="4" value="4" onclick="display(value)">4</button>
+                <button type="submit" name="5" value="5" onclick="display(value)">5</button>
+                <button type="submit" name="6" value="6" onclick="display(value)">6</button>
+                <button type="submit" name="7" value="7" onclick="display(value)">7</button>
+                <button type="submit" name="8" value="8" onclick="display(value)">8</button>
+                <button type="submit" name="9" value="9" onclick="display(value)">9</button>
+                <button type="submit" name="0" value="0" onclick="display(value)">0</button>
+                <button class="double" type="submit" onclick="backSpace()">Back Space</button>
+            </div>
+            <div class="keys">
+
+                <button type="submit" name="q" value="q" onclick="display(value)">q</button>
+                <button type="submit" name="w" value="w" onclick="display(value)">w</button>
+                <button type="submit" name="e" value="e" onclick="display(value)">e</button>
+                <button type="submit" name="r" value="r" onclick="display(value)">r</button>
+                <button type="submit" name="t" value="t" onclick="display(value)">t</button>
+                <button type="submit" name="y" value="y" onclick="display(value)">y</button>
+                <button type="submit" name="u" value="u" onclick="display(value)">u</button>
+                <button type="submit" name="i" value="i" onclick="display(value)">i</button>
+                <button type="submit" name="o" value="o" onclick="display(value)">o</button>
+                <button type="submit" name="p" value="p" onclick="display(value)">p</button>
+                <button class="double" type="submit" onclick="enter()">Enter</button>
+            </div>
+
+            <div class="keys">
+
+                <button type="submit" name="a" value="a" onclick="display(value)">a</button>
+                <button type="submit" name="s" value="s" onclick="display(value)">s</button>
+                <button type="submit" name="d" value="d" onclick="display(value)">d</button>
+                <button type="submit" name="f" value="f" onclick="display(value)">f</button>
+                <button type="submit" name="g" value="g" onclick="display(value)">g</button>
+                <button type="submit" name="h" value="h" onclick="display(value)">h</button>
+                <button type="submit" name="j" value="j" onclick="display(value)">j</button>
+                <button type="submit" name="k" value="k" onclick="display(value)">k</button>
+                <button type="submit" name="l" value="l" onclick="display(value)">l</button>
+                <button id="caps-lock" class="triple" type="submit" name="off" value="off" type="submit"
+                    onclick="capsLockOn(value)">Caps Lock</button>
+            </div>
+            <div class="keys">
+
+                <button type="submit" name="z" value="z" onclick="display(value)">z</button>
+                <button type="submit" name="x" value="x" onclick="display(value)">x</button>
+                <button type="submit" name="c" value="c" onclick="display(value)">c</button>
+                <button type="submit" name="v" value="v" onclick="display(value)">v</button>
+                <button type="submit" name="b" value="b" onclick="display(value)">b</button>
+                <button type="submit" name="n" value="n" onclick="display(value)">n</button>
+                <button type="submit" name="m" value="m" onclick="display(value)">m </button>
+                <button type="submit" name="-" value="-" onclick="display(value)">-</button>
+                <button type="submit" name="_" value="_" onclick="display(value)">_</button>
+                <button id="shift" class="triple" onclick="shiftOn()">Shift</button>
+
+            </div>
+            <div class="keys">
+                <button class="space" type="submit" name=" " value=" " onclick="display(value)">Space</button>
+                <button class="triple" type="submit" onclick="myAlert()">OK</button>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
